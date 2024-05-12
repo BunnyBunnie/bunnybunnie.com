@@ -1,0 +1,31 @@
+/* item 1 music*/
+#mydiv {
+  position: absolute;
+  cursor: move;
+  justify-self: center;
+  align-self: center;
+}
+
+.window {
+  width: 550px;
+  height: 450px;
+}
+
+.window img{
+  height: 400px;
+  align-self: center;
+  display: none;
+}
+
+/* Styles for phones */
+@media only screen and (max-width: 600px) {
+
+  .window img {
+    height: 250px;
+  }
+
+  .window {
+    width: 400px;
+    height: 300px;
+  }
+}

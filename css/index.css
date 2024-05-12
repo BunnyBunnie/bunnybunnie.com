@@ -1,0 +1,61 @@
+/* item 1 music*/
+#mydiv {
+  position: absolute;
+  cursor: move;
+  justify-self: center;
+  align-self: center;
+}
+
+.window {
+  width: 400px;
+  height: 400px;
+  cursor: move;
+}
+
+.image-1 img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Media query for small screens (e.g., cellphones) */
+@media only screen (min-width: 320px) and (max-width: 768px) {
+  body {
+    margin: 100px;
+  }
+
+  form {
+    max-width: none;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+/* Additional CSS for tablet and phone */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablet */
+  .window-body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for phone */
+  .window-body {
+    font-size: 12px;
+  }
+  .title-bar-text {
+    font-size: 16px;
+  }
+}

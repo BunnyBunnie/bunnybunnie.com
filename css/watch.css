@@ -1,0 +1,32 @@
+/* item 1 music*/
+#mydiv {
+  position: absolute;
+  cursor: move;
+  justify-self: center;
+  align-self: center;
+}
+
+@media only screen and (max-width: 961px){
+  .window-body {
+    width: 500px;
+    height: 300px;
+  }
+
+  iframe {
+    width: 500px; 
+    height: 300px; 
+  }
+}
+
+@media only screen and (max-width: 699px){
+
+  .window-body {
+    width: 400px;
+    height: 200px;
+  }
+
+  iframe {
+    width: 400px; 
+    height: 200px; 
+  }
+}

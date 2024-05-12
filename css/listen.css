@@ -1,0 +1,126 @@
+figure {
+  margin: 0 auto;
+}
+
+#mydiv {
+  position: absolute;
+  cursor: move;
+  justify-self: center;
+  align-self: center;
+}
+
+.music player {
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #6f36ff;
+}
+
+.wrapper header {
+  font-size: 23px;
+  font-weight: 500;
+  padding: 17px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper header.active {
+  cursor: move;
+  user-select: none;
+}
+.wrapper .content {
+  display: flex;
+  padding: 30px 30px 40px 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* item 1 music*/
+text .window {
+  width: 200px;
+  height: 100px;
+  display: block;
+  top: 0;
+}
+
+/* Default styles for all screens */
+
+/* Styles for phones */
+@media only screen and (max-width: 600px) {
+  .text .window-body figure {
+    width: 100%;
+    height: 50%;
+  }
+
+  .window-body audio {
+    width: 100%;
+  }
+
+  .text .window {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .text .social-media img {
+    display: flex; /* or display: block; */
+    width: 16px; /* Adjust the width of the icons as needed */
+    max-height: 50%; /* Maintain aspect ratio */
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .text .social-media ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .text .social-media li {
+    list-style-type: none; /* Remove list item bullets */
+    padding: 8px 0; /* Adjust the padding as needed for spacing between icons */
+    margin: 5px;
+    display: block;
+  }
+
+  .text .social-media a {
+    text-decoration: none;
+    color: #333; /* Change the color to your preference */
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .window-body figure {
+    width: 100%;
+  }
+
+  .window-body audio {
+    width: 100%;
+  }
+}
+
+/* Styles for large screens */
+@media only screen and (min-width: 1025px) {
+  .window-body figure {
+    width: 100%;
+    margin: 0 1%;
+  }
+
+  .window-body audio {
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+/* item 1 music*/
+#mydiv {
+  position: absolute;
+  cursor: move;
+  justify-self: center;
+  align-self: center;
+}
+
+text .window {
+  width: 200px;
+  height: 100px;
+  display: block;
+  top: 0;
+}
+
+
+
+
+
